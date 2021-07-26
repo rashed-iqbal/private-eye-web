@@ -1,0 +1,36 @@
+.toast-area {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  z-index: 1000;
+}
+
+.toast {
+  width: 250px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  animation: toast-in-right 0.7s;
+}
+
+.success-background {
+  background: rgb(173, 243, 210);
+}
+
+.toast p {
+  font-weight: 500;
+  margin-left: 10px;
+  color: #076047;
+}
+
+@keyframes toast-in-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translate(0);
+  }
+}

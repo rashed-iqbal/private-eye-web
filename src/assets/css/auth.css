@@ -1,0 +1,79 @@
+.auth_page {
+  background: #eff1f5;
+  min-height: 100vh;
+}
+.auth_top_area {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+.go_back_btn img {
+  margin-left: 10px;
+}
+.go_back_btn {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.auth_logo {
+  cursor: pointer;
+}
+
+.auth_bottom_area {
+  margin-top: 30px;
+  display: flex;
+}
+.auth_left_area {
+  width: 50%;
+}
+.auth_right_area {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.go_back_btn p {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .auth_page {
+    background: white;
+    padding: 10px;
+    padding-top: 0px;
+    min-height: auto;
+  }
+  .auth_left_area {
+    display: none;
+  }
+  .auth_right_area {
+    width: 100%;
+  }
+  .auth_logo {
+    width: 150px;
+  }
+  .go_back_btn img {
+    margin-left: 3px;
+    width: 20px;
+  }
+  .go_back_btn p {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 960px) {
+  .go_back_btn:hover {
+    background: coral;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .auth_left_area img {
+    width: 100%;
+  }
+}

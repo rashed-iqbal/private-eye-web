@@ -1,0 +1,96 @@
+.signup_area {
+  background: white;
+  display: flex;
+  font-family: Roboto;
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  flex-direction: column;
+}
+.signup_area h1 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.signup_area p {
+  font-size: 14px;
+  font-family: Roboto Light;
+  margin-top: 10px;
+}
+.login_route {
+  font-weight: 700;
+  color: #007ee5;
+}
+.signup_area input {
+  padding: 11px;
+  font-size: 15px;
+  border: 1px solid #aebec6;
+  margin-top: 8px;
+  margin-bottom: 0;
+  width: 250px;
+}
+
+.signup_area button {
+  padding: 8px;
+  width: 100%;
+  font-size: 22px;
+  background: #007ee5;
+  border: none;
+  color: white;
+  position: relative;
+  margin: 8px 0;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .signup_area button:hover {
+    background-color: #baccdb;
+    color: #333;
+  }
+}
+
+.signup_area p {
+  text-align: center;
+}
+
+.error_text {
+  display: flex;
+  justify-content: flex-start;
+  color: #e74c3c;
+  visibility: hidden;
+}
+
+.error_border {
+  border-color: #e74c3c !important;
+}
+
+.error_visible {
+  visibility: visible;
+}
+
+/* btn loading animation */
+.visibility_hidden {
+  visibility: hidden;
+}
+.signup_area button div {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 10px;
+}
+.signup_area button div p {
+  margin: 0;
+  margin-left: 5px;
+}
+.signup_area button div img {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

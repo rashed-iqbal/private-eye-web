@@ -1,0 +1,20 @@
+.loading_area {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .loading_area img {
+    height: 200px;
+    width: 200px;
+  }
+}
+@media (min-width: 768px) {
+  .loading_area img {
+    height: 400px;
+    width: 400px;
+  }
+}

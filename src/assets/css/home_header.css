@@ -1,0 +1,80 @@
+header {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+}
+
+header ul li {
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+header ul li a {
+  color: black;
+}
+
+.home_join_btn {
+  padding: 4px 10px;
+  background: wheat;
+}
+
+header ul li:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  header ul li {
+    display: none;
+  }
+  header ul li:last-child {
+    display: block;
+  }
+  .home_logo_area img {
+    width: 150px;
+  }
+  header {
+    margin: 0px 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    position: fixed;
+  }
+}
+@media (min-width: 768px) {
+  header {
+    width: 720px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    width: 960px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    width: 1140px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1400px) {
+  header {
+    width: 1320px;
+    margin: 0 auto;
+  }
+}

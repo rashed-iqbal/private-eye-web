@@ -1,0 +1,17 @@
+.cancel_dropdown {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.home_dropdown {
+  position: absolute;
+  right: 0;
+  top: 36px;
+  height: 250px;
+  width: 200px;
+  background: #eee;
+  z-index: 10;
+}
