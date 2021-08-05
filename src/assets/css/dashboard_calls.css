@@ -1,0 +1,62 @@
+.calls_area,.call_element,.calls_left_area,.calls_right_area,.call_details,.call_details img{
+    box-sizing: border-box;
+}
+.calls_area {
+  height: 500px;
+  margin-top: 20px;
+  border: 1px solid #000;
+  
+}
+
+.calls_left_area {
+    width: 40%;
+    float: left;
+    height: 100%;
+    border-right: 1px solid #000;
+    box-sizing: border-box;
+    overflow-x: auto;
+    box-sizing: border-box;
+}
+
+.calls_right_area{
+    width: 60%;
+    float: right;
+}
+
+.call_element{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.call_element:hover{
+    background: rgba(100, 100, 100, 0.3);
+    cursor: pointer;
+}
+
+.call_details{
+    display: flex;
+    height: 40px;
+}
+
+.call_details img{
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.call_text p{
+    font-size: 12px;
+}
+
+.call_date p{
+    font-size: 12px;
+}
+
+@media (max-width:768px) {
+    .calls_left_area{
+        width: 100%;
+        border-right: none;
+    }
+}

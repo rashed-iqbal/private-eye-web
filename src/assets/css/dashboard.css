@@ -64,6 +64,19 @@
   align-items: center;
 }
 
+.top_left_area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top_left_area p {
+  font-size: 20px;
+  margin-left: 20px;
+  cursor:default;
+}
+.top_left_area img {
+  cursor: pointer;
+}
 @media (max-width: 720px) {
   .side_bar_area {
     display: none;

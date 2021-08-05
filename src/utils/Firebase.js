@@ -4,13 +4,12 @@ import "firebase/firestore";
 
 // Initialize Firebase
 const app = firebase.initializeApp({
-  apiKey: "AIzaSyDHeFTmErwchuHIylTRiVBI4Y36nFtKpkI",
-  authDomain: "private-eye-998d0.firebaseapp.com",
-  databaseURL: "https://private-eye-998d0-default-rtdb.firebaseio.com",
-  projectId: "private-eye-998d0",
-  storageBucket: "private-eye-998d0.appspot.com",
-  messagingSenderId: "592182706409",
-  appId: "1:592182706409:web:761d072dbb8fe193247078",
+  apiKey: "AIzaSyBj7os3z2Jllz_eozWttIjyjYmTI_rbyrE",
+  authDomain: "privateeyelite.firebaseapp.com",
+  projectId: "privateeyelite",
+  storageBucket: "privateeyelite.appspot.com",
+  messagingSenderId: "575425771906",
+  appId: "1:575425771906:web:e7aefeec18dadc50eff79b"
 });
 
 // Firebase auth

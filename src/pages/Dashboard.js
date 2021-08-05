@@ -52,11 +52,16 @@ function Dashboard() {
 
       <div className="main_section_area">
         <div className="top_area">
-          <img
-            onClick={() => history.goBack()}
-            src={ic_arrow_left}
-            alt="menu_icon"
-          />
+          <div className="top_left_area">
+            <img
+              onClick={() => history.goBack()}
+              src={ic_arrow_left}
+              alt="menu_icon"
+            />
+            <p>Messages</p>
+            {console.log(history.location)}
+          </div>
+
 
           <div className="dashboard_dropdown_btn">
             <img
@@ -72,11 +77,12 @@ function Dashboard() {
         <div className="bottom_area">
           <Switch>
             <Route path="/dashboard" exact component={Home} />
-            <Route path="/dashboard/apps" exact component={Apps} />
-            <Route path="/dashboard/calls" exact component={Calls} />
+            <Route path="/dashboard/apps" component={Apps} />
+            <Route path="/dashboard/calls" component={Calls} />
+            <Route path="/dashboard/messages" component={Messages} />
             <Route path="/dashboard/contacts" exact component={Contacts} />
             <Route path="/dashboard/locations" exact component={Locations} />
-            <Route path="/dashboard/messages" exact component={Messages} />
+
             <Route path="/dashboard/images" exact component={Pictures} />
           </Switch>
         </div>
